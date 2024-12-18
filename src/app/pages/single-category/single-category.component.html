@@ -1,0 +1,16 @@
+<div class="bg-theme p-5 bg-theme-primary">
+    <div class="container">
+        <h1 class="text-white">{{category}}</h1>
+        <p class="text-white">Explore our {{category}} articles.</p>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        @for(post of postsData;track post.title){
+            <div class="col-lg-4 col-md-3 col-sm-12 mb-3 d-flex justify-content-center">
+                <app-post-card class="card h-100 shadow-effect" [postData] = "post" ></app-post-card>
+            </div>
+        }
+    </div>
+</div>

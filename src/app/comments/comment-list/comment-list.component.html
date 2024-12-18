@@ -1,0 +1,17 @@
+<div class="card mb-5 mt-5 pb-5 shadow-effect">
+    <div class="card-body">
+        <h4 class="mt-3 mb-3">Comments ({{commentsData.length}})</h4>
+
+        @for(comment of commentsData;track comment.createdAt){
+            <div class="comment-box mt-3">
+                <h6 class="mb-0">{{comment.name}}</h6>
+                <small class="text-danger">LAST UPDATED - {{comment.createdAt.toDate() | date:'short'}}</small>
+                
+                <div class="mt-3 mb-3">
+                    {{comment.comment}}
+                </div>
+                <hr>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-md fixed-top">
+    <div class="container">
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+                @for(category of categoriesData; track category.name){
+                    <li class="nav-item ms-3"><a class="nav-link" [routerLink]="['/category',category.name,category.id]">{{category.name}}</a></li>
+                }
+            </ul>
+        </div>
+    </div>
+</nav>

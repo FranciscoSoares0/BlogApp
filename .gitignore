@@ -28,6 +28,9 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
+# Ignore environment files
+src/environments/environment.prod.ts
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/
@@ -40,3 +43,5 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+.firebase
